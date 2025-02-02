@@ -2,10 +2,10 @@ ext.versions = [
 
 
         appcompat               : "1.6.1",
-        kotlin                  : '1.8.0',
-        conductor               : "3.0.0-rc4",
+        kotlin                  : '2.1.10',
+        conductor               : "4.0.0-preview-4",
         timber                  : "4.7.1",
-        hilt                    : '2.49',
+        hilt                    : '2.55',
         navigation              : "2.3.4",
         material                : "1.9.0",
         asm                     : "9.6",
