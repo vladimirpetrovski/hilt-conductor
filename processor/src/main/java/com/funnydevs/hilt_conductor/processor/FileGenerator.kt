@@ -204,7 +204,7 @@ class FileGenerator : AbstractProcessor() {
       val injectMethodBuilder = MethodSpec.methodBuilder("inject")
         .addModifiers(Modifier.PUBLIC, Modifier.STATIC)
         .returns(Void.TYPE)
-        .addParameter(ClassName.get(packageValue.substringBeforeLast("."), "ConductorComponentLifecycleHandler"), "handler")
+        .addParameter(ClassName.get("com.funnydevs.hilt_conductor", "ConductorComponentLifecycleHandler"), "handler")
         .addParameter(ClassName.bestGuess(whereInject.className), "controller")
 
       injectMethodBuilder.addStatement("\$T entryPoint = \$T.get(handler, \$T.class)",
